@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --panel: rgba(255,255,255,0.06);
+      --line: rgba(255,255,255,0.12);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --focus: rgba(255,255,255,0.18);
+    }
+
+    *{ box-sizing: border-box; }
+
+    html, body{
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap{
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 28px 16px;
+    }
+
+    .card{
+      width: min(900px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 42px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+    }
+
+    h1{
+      margin: 0 0 14px 0;
+      font-size: 34px;
+      letter-spacing: 0.2px;
+    }
+
+    p{
+      margin: 0 0 26px 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .nav-btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding: 18px 18px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 700;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+      min-height: 64px;
+      white-space: nowrap;
+    }
+
+    .nav-btn:hover{
+      transform: translateY(-2px);
+      border-color: var(--focus);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .hint{
+      margin-top: 18px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.55);
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      line-height: 1.5;
+    }
+
+    code{
+      color: rgba(255,255,255,0.85);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Home</h1>
+      <p>Select a page:</p>
+
+      <div class="btn-grid">
+        <!-- Buttons (easy to add more: copy one <a> line) -->
+        <a class="nav-btn" href="./FrameInsight/frameinsight.html">Week 4: Frame Insight</a>
+        <a class="nav-btn" href="./Endfield/endfield.html">Week 3: Context Know</a>
+      </div>
+
+      <!-- <div class="hint">
+        To add more pages later, copy one line like:
+        <br />
+        <code>&lt;a class="nav-btn" href="./newpage.html"&gt;New Page&lt;/a&gt;</code>
+      </div> -->
+    </section>
+  </main>
+</body>
+</html>

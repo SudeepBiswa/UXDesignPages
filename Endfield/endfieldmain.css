@@ -1,0 +1,151 @@
+:root {
+    --nav-height: 60px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+
+#navBar {
+    width: 40%;
+    height: var(--nav-height);
+    background-color: rgba(31, 31, 31, 0.85);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: monospace;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+#navBar:hover {
+    transform: translateX(-50%) scale(1.05);
+    background-color: rgba(25, 25, 25, 0.9);
+}
+
+#navBar .logo {
+    position: absolute;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#navBar .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#navBar .navLinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+#navBar .navLinks li a:hover {
+    color: #f0a500;
+}
+
+#mainDiv {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 10px; 
+    box-sizing: border-box;
+    gap: 10px;
+    align-items: stretch;
+}
+
+#imgDiv {
+    flex: 0 0 60%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6); 
+}
+
+#mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#logoImg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#textDiv {
+    flex: 1;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px; /* slightly bigger padding */
+    box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#textDiv h1 {
+    margin-bottom: 100px;
+    font-size: 4rem; /* much bigger heading */
+}
+
+#textDiv p {
+    font-size: 2rem; /* bigger paragraph text */
+    margin: 0 20px; /* adds left and right space */
+    line-height: 1.5; /* optional, improves readability */
+}
+
+#homeButton {
+    /* margin-top: 40px; */
+    /* padding: 12px 24px; */
+    margin-left: 10px;
+    font-size: 1.2rem;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
