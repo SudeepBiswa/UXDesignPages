@@ -135,9 +135,7 @@ html, body {
     line-height: 1.5; /* optional, improves readability */
 }
 
-#homeButton {
-    /* margin-top: 40px; */
-    /* padding: 12px 24px; */
+/* #homeButton {
     margin-left: 10px;
     font-size: 1.2rem;
     background-color: #f0a500;
@@ -146,6 +144,6 @@ html, body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+} */
 
 
